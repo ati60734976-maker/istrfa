@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda De Abarrotes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="panel">
+        <a class="inicio" href="index.html"><img class="img1" src="images/icono_tienda.jpg" alt="icono_tienda"></a>
+        <div class="c2">
+            <p class="titulo">BODEGA DON JOSÉ</p>
+        </div>
+        <img class="carrito" src="images/icono_carrito.png" alt="carrito">
+    </header>
+
+    <nav>
+        <ul class="sections">
+            <li><a class="categ" href="frutas.html">Frutas</a></li>
+            <li><a class="categ" href="lacteos.html">Lácteos</a></li>
+            <li><a class="categ" href="derivados.html">Derivados</a></li>
+            <li><a class="categ" href="bebidas.html">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <main class="cuerpo">
+        <div class="textos">
+            <p class="texto">Tu tienda de abarrotes de confianza</p>
+            <p class="texto">Productos frescos y de calidad para tu hogar. Encuentra todo lo que necesitas en un solo lugar.</p>
+        </div>
+        <div class="textos">
+            <img class="imgt" src="images/interior_tienda.png" alt="tienda">
+        </div>
+    </main>
+
+    <div class="contactanos">
+        <a href="#" class="cont" id="btnAbrirModal">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/51928223482?text=Hola%20Don%20José,%20deseo%20hacer%20un%20pedido" class="cont" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</small>
+    </footer>
+
+    <div id="miModal" class="modal-pedido">
+        <div class="modal-contenido">
+            <span class="cerrar-btn">&times;</span>
+            <h2 style="color: rgb(0, 187, 0);">Nuevo Pedido</h2>
+            
+            <label>Nombre:</label>
+            <input type="text" id="nombreCliente" placeholder="Tu nombre">
+            
+            <label>Producto:</label>
+            <input type="text" id="productoPedido" placeholder="Ej: Manzanas">
+            
+            <label>Cantidad:</label>
+            <input type="text" id="cantidadPedido" placeholder="Ej: 2 kg">
+
+            <button type="button" onclick="enviarPorCorreo()" class="btn-enviar">
+                ENVIAR A GMAIL
+            </button>
+        </div>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

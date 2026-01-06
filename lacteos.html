@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lácteos</title>
+    <link rel="stylesheet" href="css/lacteos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="panel">
+        <a class="inicio" href="index.html"><img class="img1"src="images/icono_tienda.jpg" alt="icono_tienda"></a>
+        <div class="c2">
+            <p class="titulo">BODEGA DON JOSÉ</p>
+        </div>
+        <img class="carrito" src="images/icono_carrito.png" alt="carrito">
+    </header>
+    
+    <nav>
+        <ul class="sections">
+            <li><a class="categ" href="frutas.html">Frutas</a></li>
+            <li><a class="categ" href="lacteos.html">Lácteos</a></li>
+            <li><a class="categ" href="derivados.html">Derivados</a></li>
+            <li><a class="categ" href="bebidas.html">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <section id="frutas" class="seccion-productos">
+    <h2 class="titulo-seccion">Lácteos</h2>
+
+    <div class="contenedor-productos">
+
+        <div class="producto">
+            <img src="images/leche.png" alt="Leche Evaporada Gloria 400 g">
+            <h3>Leche Evaporada Gloria 400 g</h3>
+            <p class="precio">S/ 5.00 x 1L</p>
+            <a href="https://wa.me/51928223482?text=Hola%20Don%20José,%20deseo%20comprar%20Leche%20Gloria%20Entera%201L" class="cont" target="_blank">
+                <button class="btn-comprar">Hacer pedido</button>
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="images/yogurt.png" alt="Yogurt Gloria Fresa 1L">
+            <h3>Yogurt Gloria Fresa 1L</h3>
+            <p class="precio">S/ 6.50 x 1l</p>
+            <a href="https://wa.me/51928223482?text=Hola%20Don%20José,%20deseo%20comprar%20Yogurt%20Gloria%20Batido%20Fresa%201L" class="cont" target="_blank">
+                <button class="btn-comprar">Hacer pedido</button>
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="images/queso.png" alt="Queso Fresco Artesanal">
+            <h3>Queso Fresco Artesanal</h3>
+            <p class="precio">S/ 18.00 x kg</p>
+            <a href="https://wa.me/51928223482?text=Hola%20Don%20José,%20deseo%20comprar%20Naranja%20Dulce" class="cont" target="_blank">
+                <button class="btn-comprar">Hacer pedido</button>
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="images/mantequilla.png" alt="Mantequilla Laive 100g">
+            <h3>Mantequilla Laive 100g</h3>
+            <p class="precio">S/ 4.80 x unidad</p>
+            <a href="https://wa.me/51928223482?text=Hola%20Don%20José,%20deseo%20comprar%20Mantequilla%20Laive%20100g" class="cont" target="_blank">
+                <button class="btn-comprar">Hacer pedido</button>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+     <div class="contactanos">
+        <a href="#" class="cont" id="btnAbrirModal">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/51928223482?text=Hola%20Don%20José,%20deseo%20hacer%20un%20pedido" class="cont" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <footer>
+        <small>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</small>
+    </footer>
+
+        <div id="miModal" class="modal-pedido">
+        <div class="modal-contenido">
+            <span class="cerrar-btn">&times;</span>
+            <h2 style="color: rgb(0, 187, 0);">Nuevo Pedido</h2>
+            
+            <label>Nombre:</label>
+            <input type="text" id="nombreCliente" placeholder="Tu nombre">
+            
+            <label>Producto:</label>
+            <input type="text" id="productoPedido" placeholder="Ej: Manzanas">
+            
+            <label>Cantidad:</label>
+            <input type="text" id="cantidadPedido" placeholder="Ej: 2 kg">
+
+            <button type="button" onclick="enviarPorCorreo()" class="btn-enviar">
+                ENVIAR A GMAIL
+            </button>
+        </div>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
